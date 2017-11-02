@@ -23,6 +23,7 @@ before_install:
 script:
   - ./gradlew clean
   - ./gradlew build
+  - cat app/build/reports/lint-results.html
 
 addons:
   coverity_scan:
